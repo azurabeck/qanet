@@ -1,0 +1,458 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    color: white;
+    font-family: Arial;
+    font-size: calc(30px + 0.5vmin);
+    background-color: #303644;
+    padding: 9px;
+    overflow:hidden;
+}
+
+#cloud-scroll {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: url("images/kiper_loading.gif")no-repeat center center;
+    -webkit-animation: backgroundScroll 10s linear infinite;
+    animation: backgroundScroll 10s linear infinite;
+}
+
+@-webkit-keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: 100% 0;}
+}
+
+@keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: 100% 0;}
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv{
+    display: none;
+}
+
+header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: #303644;
+    margin-left: -15px;
+    margin-right: -15px;
+    z-index: 10;
+    padding-top: 6px;
+    padding-bottom: 8px
+}
+
+.left_header{
+    padding-left: 4px;
+}
+
+.title_text{
+    font-weight: bold;
+    font-size: calc(25px + 0.5vmin);
+    padding-top: 10px;
+}
+
+.header_background{
+    padding-right: 4px;
+    padding-left: 27px;
+}
+
+.divtoappend{
+    width: 100%;
+    bottom: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.div-button-counter{
+    background-color: #ddd;
+    float: left;
+    margin: 0 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+#myProgress {
+    margin-left: -9px;
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+#myBar {
+    width: 1%;
+    height: 5px;
+    background-color: #00aae4;
+}
+
+footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: calc(10px + 0.5vmin);
+    background-color: #303644;
+    left: -5px;
+    /*background-image: linear-gradient(to bottom, rgba(255,255,255,.1), rgba(255,255,255,.4) 49%, rgba(255,255,255,0) 50%, rgba(255,255,255,.4));*/
+    /*transition: all .5s;*/
+}
+
+footer a:link{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+#copy{
+    padding-top: 70px;
+}
+
+#foo{
+    bottom: 0;
+    right: 0;
+    float: right;
+    width: 100%;
+    text-align:end;
+}
+
+
+.keymap {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    padding-right: 2px;
+    border-radius: 0.5vmin;
+    position: relative;
+    text-align: left;
+}
+
+.keymap_label{
+    float: left;
+    padding-right: 10px;
+}
+
+.keymap_main{
+    float: right;
+    margin-top: -30px;
+    margin-right: 19px;
+}
+
+.key_map_position{
+    float: left;
+    line-height: 25px;
+    font-size: calc(12px + 1vmin);
+    cursor: pointer;
+}
+
+.key_map_position:hover{
+    color: #D04C51;
+}
+
+.red_button {
+    background-color: #FF5A00;
+}
+
+.green_button {
+    background-color: #255E38;
+}
+
+.metrics {
+    background-color: #64B027;
+}
+
+.orange_button {
+    background-color: #782DBD;
+}
+
+.yellow_button {
+    background-color: #D04C51;
+}
+
+.light_green_button {
+    background-color: #249FD1;
+}
+
+.jumbotron{
+    padding-top: 28px;
+}
+
+.main-body{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+#swapper-first{
+    position:relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.row-box {
+    margin-right: 0px;
+    margin-left: 0px;
+    position: relative;
+    -webkit-animation-name: row-box;
+    -webkit-animation-duration: 1s;
+    animation-name: row-box;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes row-box {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes row-box {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+.div-box{
+    display: none;
+}
+
+.row-box:before {
+    display: table;
+    content: " ";
+}
+
+.row-box:after{
+    clear: both;
+}
+
+.box-card {
+    float: left;
+    width: 33%;
+    height: 340px;
+    position: relative;
+    min-height: 1px;
+    margin-bottom: 10px;
+}
+
+.box-card > .box-card-content {
+    padding-right: 8px;
+    padding-left: 8px;
+    height: 100%;
+}
+
+.box-card > .box-card-content > .box-main{
+    border-radius: 1vmin;
+    height: 100%;
+    position: relative;
+}
+
+.box-backlog{
+    background-color: #D04C51;
+}
+
+
+.box-product{
+    background-color: #255E38;
+    /*color: rgba(0, 128, 173, 1);*/
+}
+
+.box-inprogress{
+    background-color: #782DBD;
+    /*color: rgba(0, 128, 173, 1);*/
+}
+
+.box-metrics{
+    background-color: #64B027;
+    /*color: rgba(0, 128, 173, 1);*/
+}
+
+.box-done{
+    background-color: #FF5A00;
+    animation: blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+    /*color: rgba(0, 128, 173, 1);*/
+}
+
+@keyframes blinker {
+    to {
+        opacity: 0;
+    }
+}
+
+.box-in_qa{
+    color: white;
+    background-color: #249FD1;
+    /*background-color: rgba(0, 128, 173, 1);
+    color: rgba(0, 128, 173, 1);*/
+}
+
+.box-inprogress a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.box-inprogress a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.box-product a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.box-product a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.box-done a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.box-done a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.box-in_qa a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.box-in_qa a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.box-backlog a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.box-backlog a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.box_title{
+    font-size: calc(30px + 0.5vmin);
+}
+
+.sprint{
+    font-size: calc(25px + 0.5vmin);
+}
+
+.status{
+    font-size: calc(20px + 0.5vmin);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.subject{
+    font-size: calc(20px + 0.5vmin);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.counts{
+    font-size: calc(15px + 0.5vmin);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.5;}
+}
+
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}

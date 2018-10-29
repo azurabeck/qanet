@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title> PSafe QA Net </title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     	<link rel="stylesheet" href="css/footer.css">
+      <link rel="stylesheet" href="css/container.css">
+      <link rel="stylesheet" href="css/bs-calltoaction.css">
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+    	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    	<link rel="icon" href="img/icon.png">
+    </head>
+    
+    
+    <body>
+
+
+
+        <!--=================================================   C H A M A N D O - J S =============================================================-->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/myjs.js"></script>
+        <script src="js/thumbnail.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+
+        <!--=========================================================== H E A D E R ================================================================-->
+        <header>
+
+               <nav class="navbar navbar-default" style="border-radius: 0; border: none" role="navigation">
+                    <div class="containermenu">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+
+                      <!--CRIAR NAV RESOLUÇÃO PEQUENA-->
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <!--FINAL DA CRIAÇÃO DA NAV MINIMIZADA-->
+
+                      <!--LOGO-->
+                      <div class="navbar-brand navbar-brand-centered"><span class="blue">PSafe QA</span><span class="lightblue">Net</span></div>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a href="index.html"> WorkView</a></li>
+                          <li><a href="malware.html">Malware</a></li>
+                          <li><a href="sites.html">Sites</a></li>
+                          <li><a href="tools.html">Tools</a></li>
+                          <li><a href="stash.html">Stash</a></li>
+                          <li><a href="adbComands.html">ADB</a></li>
+                                  
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+
+                  </div><!-- /.container-fluid -->
+              </nav>
+          </header>
+
+
+
+
+      <!--========================================================== B A N N E R =================================================================-->
+
+      
+       <div class="container">
+
+            <div class="row">
+
+              <div class="col-md-6">
+                  <div class="row" style="margin-top: 3%; margin-bottom: 5%;">
+                    <div class="col-md-4" style="padding-top: 1%;"><img src="img/logo-mobile.png"></div>
+                    <div class="col-md-8" style="text-align: left;"><h4>ADB Commands</h4><p>Lista de comandos adb que mais utilizamos. Para utilizar esses comandos, é necessários instalar o sdk manager, e seta-los nas variáveis de sistema do seu computador. No programa QATools existem outros comandos e opções disponíveis, e você pode chegar todos os .bat na rais do programa.</p></div>
+                  </div>                  
+              </div>
+
+              <div class="col-md-6">
+                  <div class="row" style="margin-top: 5%; margin-bottom: 5%;">
+                    <div class="col-md-12"><a href="https://redmine.psafe.com/" 
+                    onClick="javascript:window.open('https://drive.google.com/drive/folders/0B7wqCBff49PeV3hISXE4NDVtd2s;');" style="border: 1px #fff solid; padding: 1% 10%;">Clique para abrir o tutorial.</a></div>
+                  </div>
+
+                  <div class="row" style="margin-top: 5%; margin-bottom: 5%;">
+                    <div class="col-md-12">
+                        <a href="#" alt="QATools"><img src="img/icon-faq-1.png"></a> &nbsp;&nbsp;   
+                        <a href="#" alt="PSafe Total"><img src="img/icon-faq-2.png"></a> &nbsp;&nbsp;
+                        <a href="#" alt="PowerPro"><img src="img/icon-faq-3.png"></a> &nbsp;&nbsp;   
+                        <a href="#" alt="Charles"><img src="img/icon-faq-4.png"></a> &nbsp;&nbsp;
+                        <a href="#" alt="Android Studio"><img src="img/icon-faq-5.png"></a> &nbsp;&nbsp;   
+                        
+                    </div>
+                  </div>
+              </div>
+
+            </div>  
+
+        </div>
+
+      
+       <!--======================================================== C O N T E U D O ===============================================================-->
+     
+        <div class="container">
+
+            <div class="col-sm-12">
+
+                <div class="bs-calltoaction bs-calltoaction-default">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title">Command: Install</h1>
+                            <div class="cta-desc">
+                                <p>Função: Instala qualquer aplicativo, a partir de um .apk em seu computador<br>
+                                Estrutura: adb install (path do apk + nome + extensão)<br>
+                                Exemplo: adb install C:\Users\rebec\Downloads\pwp.apk</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="softwares/install.bat" class="btn btn-lg btn-block btn-default">Download .bat</a>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+
+                <div class="bs-calltoaction bs-calltoaction-default">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title">Command: Uninstall</h1>
+                            <div class="cta-desc">
+                                <p>Função: Desinstala aplicativos no celular, para utilizar você deve passa o nome do package do aplicativo<br>
+                                Estrutura: adb uninstall (package name)<br>
+                                Exemplo: adb uninstall com.psafe.powerpro</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="softwares/pwp.uninstall.bat" class="btn btn-lg btn-block btn-default">Download .bat</a>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        
+         <div class="col-sm-12">
+
+                <div class="bs-calltoaction bs-calltoaction-default">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title">Command: Upgrade</h1>
+                            <div class="cta-desc">
+                                <p>Função: Faz o upgrade de aplicativos a partir de um mais recente no seu computador<br>
+                                Estrutura: adb uninstall -r (package name)<br>
+                                Exemplo: adb uninstall -r com.psafe.powerpro</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="softwares/upgrade.bat" class="btn btn-lg btn-block btn-default">Download .bat</a>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+        <div class="col-sm-12">
+
+                <div class="bs-calltoaction bs-calltoaction-default">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title">Command: Clear Data</h1>
+                            <div class="cta-desc">
+                                <p>Função: Limpa o cache de um aplicativo, para utilizar você deve passa o nome do package do aplicativo.<br>
+                                Estrutura: adb shell pm clear (package name)<br>
+                                Exemplo: adb shell pm clear com.psafe.powerpro</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="softwares/pwp.clearData.bat" class="btn btn-lg btn-block btn-default">Download .bat</a>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+        <div class="col-sm-12">
+
+                <div class="bs-calltoaction bs-calltoaction-default">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title">Command: Screenshot</h1>
+                            <div class="cta-desc">
+                                <p>Função: Tira uma foto da tela do seu celular, o bat em download também faz a copia do arquivo para o pc. O exemplo mostra apenas o comando para tirar a foto da tela<br>
+                                Estrutura: adb shell screencap -p<br>
+                                Exemplo: adb shell screencap -p</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="softwares/screenshot.bat" class="btn btn-lg btn-block btn-default">Download .bat</a>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+        		<div class="col-sm-12">
+
+                	<div class="bs-calltoaction bs-calltoaction-default">
+                    	<div class="row">
+	                        <div class="col-md-9 cta-contents">
+	                            <h1 class="cta-title">Command: Make movie</h1>
+	                            <div class="cta-desc">
+	                                <p>Função: Grava o que acontece na tela do seu celular, o bat em download também faz a copia do arquivo para o pc. O exemplo mostra apenas o comando para tirar a foto da tela<br>
+	                                Estrutura: adb shell screencap -p<br>
+	                                Exemplo: adb shell screencap -p</p>
+	                            </div>
+	                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="softwares/rec.bat" class="btn btn-lg btn-block btn-default">Download .bat</a>
+                        </div>
+                     </div>
+                </div>
+                </div>
+
+                <div class="col-sm-12">
+
+                	<div class="bs-calltoaction bs-calltoaction-default">
+                    	<div class="row">
+	                        <div class="col-md-9 cta-contents">
+	                            <h1 class="cta-title">Command: LogCat</h1>
+	                            <div class="cta-desc">
+	                                <p>Função: Captura os logs de um app no celular, deve ser terminado o package name do aplicativo <br>
+	                                Estrutura: adb logcat -d (package name)<br>
+	                                Exemplo: adb logcat -d com.psafe.powerpro</p>
+	                            </div>
+	                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="softwares/pwp.log.bat" class="btn btn-lg btn-block btn-default">Download .bat</a>
+                        </div>
+                     </div>
+                </div>
+                </div>
+
+
+                <div class="col-sm-12">
+
+                	<div class="bs-calltoaction bs-calltoaction-default">
+                    	<div class="row">
+	                        <div class="col-md-9 cta-contents">
+	                            <h1 class="cta-title">Command: Battery change status</h1>
+	                            <div class="cta-desc">
+	                                <p>Função: Muda a quantidade de bateria restante no celular, deve ser determinado qual o novo valor da bateria <br>
+	                                Estrutura: adb shell dumpsys battery set level (valor desejado da bateria)<br>
+	                                Exemplo: adb shell dumpsys battery set level 10</p>
+	                            </div>
+	                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="softwares/pwp.battery10.bat" class="btn btn-lg btn-block btn-default">Download .bat</a>
+                        </div>
+                     </div>
+                </div>
+                </div>
+
+                <div class="col-sm-12">
+
+                	<div class="bs-calltoaction bs-calltoaction-default">
+                    	<div class="row">
+	                        <div class="col-md-9 cta-contents">
+	                            <h1 class="cta-title">Command: Battery resete status</h1>
+	                            <div class="cta-desc">
+	                                <p>Função: Reseta todas as configurações setadas anteriormente para bateria. Restaurando o valor original do telefone <br>
+	                                Estrutura: adb shell dumpsys battery reset<br>
+	                                Exemplo: adb shell dumpsys battery reset</p>
+	                            </div>
+	                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="softwares/pwp.batteryReset.bat" class="btn btn-lg btn-block btn-default">Download .bat</a>
+                        </div>
+                     </div>
+                </div>
+                </div>
+                
+
+                <div class="col-sm-12">
+
+                	<div class="bs-calltoaction bs-calltoaction-default">
+                    	<div class="row">
+	                        <div class="col-md-9 cta-contents">
+	                            <h1 class="cta-title">Command: Battery mascara USB</h1>
+	                            <div class="cta-desc">
+	                                <p>Função: Simula que o celular esta desplugado do usb, mesmo com o usb ligado <br>
+	                                Estrutura: adb shell dumpsys battery set usb 0<br>
+	                                Exemplo: adb shell dumpsys battery set usb 0</p>
+	                            </div>
+	                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="softwares/pwp.batteryUsb.bat" class="btn btn-lg btn-block btn-default">Download .bat</a>
+                        </div>
+                     </div>
+                </div>
+                </div>
+
+                <div class="col-sm-12">
+
+                	<div class="bs-calltoaction bs-calltoaction-default">
+                    	<div class="row">
+	                        <div class="col-md-9 cta-contents">
+	                            <h1 class="cta-title">Command: Device pareado</h1>
+	                            <div class="cta-desc">
+	                                <p>Função: Verifica todos os celulares conectados no pc. Caso seja exibido o numero e modelo do celular, significa que os comandos adb estão funcionando corretamente <br>
+	                                Estrutura: adb devices<br>
+	                                Exemplo: adb devices</p>
+	                            </div>
+	                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="softwares/check_device.bat" class="btn btn-lg btn-block btn-default">Download .bat</a>
+                        </div>
+                     </div>
+                </div>
+                </div>
+
+
+                <div class="col-sm-12">
+
+                	<div class="bs-calltoaction bs-calltoaction-default">
+                    	<div class="row">
+	                        <div class="col-md-9 cta-contents">
+	                            <h1 class="cta-title">Command: Acesso Remoto</h1>
+	                            <div class="cta-desc">
+	                                <p>Função: Habilita seu celular para que os desenvolvedores possam debugar remotamente de outro computador. <br>
+	                                Estrutura: adb tcpip 5555<br>
+	                                Exemplo: adb tcpip 5555</p>
+	                            </div>
+	                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="softwares/remotedb.bat" class="btn btn-lg btn-block btn-default">Download .bat</a>
+                        </div>
+                     </div>
+                </div>
+                </div>
+
+
+
+                <div class="col-sm-12">
+
+                	<div class="bs-calltoaction bs-calltoaction-default">
+                    	<div class="row">
+	                        <div class="col-md-9 cta-contents">
+	                            <h1 class="cta-title">Command: IP Check</h1>
+	                            <div class="cta-desc">
+	                                <p>Função: Verifica o ip do celular. <br>
+	                                Estrutura: adb shell (execute enter) ip route (enter)<br>
+	                                Exemplo: <br> > adb shell <br> > ip route</p>
+	                            </div>
+	                        </div>
+                        <div class="col-md-3 cta-button">
+                            <a href="softwares/ip_info.bat" class="btn btn-lg btn-block btn-default">Download .bat</a>
+                        </div>
+                     </div>
+                </div>
+                </div>
+
+
+
+            </div>
+      
+       <!--========================================================= R O D A P E ===================================================================-->   
+    
+        
+
+      
+    </body>
+</html>
